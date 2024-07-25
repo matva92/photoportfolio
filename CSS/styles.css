@@ -5,6 +5,7 @@ body {
     position: relative;
     min-height: 100vh;
     z-index: 1;
+    background-color: rgb(123, 159, 137); /* backup color */
 
 }
 
