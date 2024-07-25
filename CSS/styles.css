@@ -1,0 +1,178 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+    
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.7; /* Set your desired opacity level */
+    z-index: -1; /* Places the image behind the content */
+    pointer-events: none; /* Ensures the background doesn't interfere with content */
+}
+
+.navbar {
+    background-color: lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.nav-link,
+.navbar-brand {
+    transition: transform 0.7s ease-in-out, background-color 0.7s ease-in-out;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    transform: scale(1.2);
+    background-color: grey;
+    color: white;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section#home {
+    text-align: center;
+}
+
+section#home img {
+    margin-top: 20px;
+    max-width: 100%;
+    width: 20%;
+    border-radius: 50%;
+    /* Rounded corners */
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    /* Shadow effect */
+}
+
+#gallery .card {
+    height: 650px;
+    padding: 20px;
+}
+
+section#gallery img {
+    margin: 0;
+    border-radius: 10px;
+    height: 60%;
+    width: 100%;
+    opacity: 60%;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+section#gallery img:hover {
+    opacity: 1;
+}
+
+section#about-me img {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 40%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    /* Shadow effect */
+}
+
+section#services {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: #517251;
+    border-color: #517251;
+}
+
+.btn-primary:hover {
+    background-color: #ce9c2f;
+    border-color: #ce9c2f;
+}
+
+.formBTN {
+    margin-top: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    margin: 30px;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #726868;
+    text-align: justify;
+    /* Justify text inside cards */
+}
+
+.card-deck {
+    margin: 0;
+}
+
+.instaBtn {
+    color: rgb(206, 69, 92);
+    border-color: rgb(206, 69, 92);
+    background-color: #271623;
+}
+
+footer a {
+    margin-bottom: 50px;
+}
+
+.pricing {
+    background-color: rgb(197, 197, 197);
+    width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
