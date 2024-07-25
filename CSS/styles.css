@@ -81,6 +81,7 @@ section#home img {
 #gallery .card {
     height: auto;
     padding: 20px;
+    overflow: auto;
 }
 
 section#gallery img {
@@ -94,6 +95,13 @@ section#gallery img {
 
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body::before {
+        background-size: cover; /* Ensures the image covers the entire screen */
+        background-attachment: scroll; /* Makes the background scroll with the content */
+    }
+}
 
 
 section#gallery img:hover {
