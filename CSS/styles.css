@@ -76,15 +76,15 @@ section#home img {
 }
 
 #gallery .card {
-    height: 50vw;
+    height: auto;
     padding: 20px;
 }
 
 section#gallery img {
     margin: 0;
     border-radius: 10px;
-    height: 60%;
-    width: 100%;
+    height: auto;
+    width: auto;
     opacity: 60%;
     transition: opacity 0.3s ease-in-out;
 
