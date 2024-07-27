@@ -55,7 +55,7 @@ body::before {
 
 .nav-link:hover,
 .navbar-brand:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: grey;
     color: white;
 }
@@ -101,6 +101,11 @@ section#gallery img {
     body::before {
         background-size: cover; /* Ensures the image covers the entire screen */
         background-attachment: scroll; /* Makes the background scroll with the content */
+    }
+
+    .nav-link,
+    .navbar-brand {
+        transform: none;
     }
 }
 
