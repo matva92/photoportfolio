@@ -46,7 +46,11 @@
   <section id="contacto">
     <div class="container">
       <h2>Contact me</h2>
-      <form action="thankyou.html" method="get">
+      <!-- <form action="thankyou.html" method="get"> -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="9cc09bad-5021-4781-b6f5-9ac99568c705">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <div class="form-group">
           <label for="userName">Name:</label>
           <input type="text" class="form-control" id="userName" name="userName">
@@ -60,6 +64,8 @@
           <textarea class="form-control" id="message" name="message" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary formBTN">Send!</button>
+        <!-- Custom Confirmation / Success Page -->
+    <input type="hidden" name="redirect" value="thankyou.html">
       </form>
     </div>
   </section>
