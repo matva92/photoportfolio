@@ -194,3 +194,11 @@ footer a {
     margin: 20px auto;
     border-radius: 10px;
 }
+
+form {
+    color: white;
+}
+
+h2.contact, h2.about, h2.gallery, h2.services {
+    color: white;
+}
